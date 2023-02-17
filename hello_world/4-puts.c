@@ -1,12 +1,13 @@
-#include <stdio.h> // main liberary
-/**
- *  * main - Entry point
- 
- *      * Return: Always 0 (Success)
- *       *
-int main ()
-{
+#include <stdio.h>
 
-	puts("\"Programming is like building a multilingual puzzle");
+/**
+ *  * main - Prints point
+ *   
+ *    * Return: 0  (Success)
+ *     
+ *      */
+int main(void)
+{
+		puts("\"Programming is like building a multilingual puzzle");
 			return (0);
 }
