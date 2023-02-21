@@ -3,6 +3,7 @@
 *File: 3-print_alphabet.c
 * Auth: idoudi mokhtar
 *
+* Description: print the letters of the alphabet
 * main - Prints the alphabet in lowercase and then in uppercase
 *
 *Return: Always 0.
