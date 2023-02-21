@@ -1,9 +1,9 @@
 #include <stdio.h>
-/*
-*File: 2-print_alphabet.c
-* Auth: Brennan D Baraban
+/**
+*File: 3-print_alphabet.c
+* Auth: idoudi mokhtar
 *
-* main - Prints the alphabet in lowercase.
+* main - Prints the alphabet in lowercase and then in uppercase
 *
 *Return: Always 0.
 */
