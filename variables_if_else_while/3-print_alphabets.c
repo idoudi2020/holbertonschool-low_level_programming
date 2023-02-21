@@ -1,8 +1,9 @@
-#include <stdio.h>
 /**
 *File: 3-print_alphabet.c
-* Auth: idoudi mokhtar
-*main - Prints the alphabet in lowercase and then in uppercase
+*Auth: idoudi mokhtar */
+#include <stdio.h>
+
+/*main - Prints the alphabet in lowercase and then in uppercase
 * Description: print the letters of the alphabet
 *
 *Return: Always 0.
