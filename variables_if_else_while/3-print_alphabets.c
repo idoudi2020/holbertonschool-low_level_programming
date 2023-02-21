@@ -1,10 +1,12 @@
-/**
-*File: 3-print_alphabet.c
-*Auth: idoudi mokhtar */
+/*
+*File: 3-print_alphabets.c
+*Auth: idoudi mokhtar
+*/
+
 #include <stdio.h>
 
-/*main - Prints the alphabet in lowercase and then in uppercase
-* Description: print the letters of the alphabet
+/**
+*main - Prints the alphabet in lowercase, and then in uppercase.
 *
 *Return: Always 0.
 */
