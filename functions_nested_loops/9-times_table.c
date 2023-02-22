@@ -25,7 +25,7 @@ void times_table(void)
 	  gens = prcause / 10;
 	  sebd = prcause % 10;
 
-	  if (colene == 0)
+	  if (cloene == 0)
 	    {
 	      _putchar('0');
 	    }
