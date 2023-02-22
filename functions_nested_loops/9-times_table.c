@@ -21,7 +21,7 @@ void times_table(void)
     {
       for (cloene = 0; cloene <= 9; cloene++)
 	{
-	  prcause = pur * colne;
+	  prcause = pur * cloene;
 	  gens = prcause / 10;
 	  sebd = prcause % 10;
 
