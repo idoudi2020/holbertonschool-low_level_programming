@@ -15,35 +15,35 @@
 
 void times_table(void)
 {
-  int pur, cloene, prcause, gens, sebd;
+int pur, cloene, prcause, gens, sebd;
 
-  for (pur = 0; pur <= 9; pur++)
-    {
-      for (cloene = 0; cloene <= 9; cloene++)
-	{
-	  prcause = pur * cloene;
-	  gens = prcause / 10;
-	  sebd = prcause % 10;
+for (pur = 0; pur <= 9; pur++)
+{
+for (cloene = 0; cloene <= 9; cloene++)
+{
+prcause = pur * cloene;
+gens = prcause / 10;
+sebd = prcause % 10;
 
-	  if (cloene == 0)
-	    {
-	      _putchar('0');
-	    }
-	  else if (prcause < 10)
-	    {
-	      _putchar(',');
-	      _putchar(' ');
-	      _putchar(' ');
-	      _putchar(sebd + '0');
-	    }
-	  else
-	    {
-	      _putchar(',');
-	      _putchar(' ');
-	      _putchar(gens + '0');
-	      _putchar(sebd + '0');
-	    }
-	}
-      _putchar('\n');
-    }
+if (cloene == 0)
+{
+_putchar('0');
+}
+else if (prcause < 10)
+{
+_putchar(',');
+_putchar(' ');
+_putchar(' ');
+_putchar(sebd + '0');
+}
+else
+{
+_putchar(',');
+_putchar(' ');
+_putchar(gens + '0');
+_putchar(sebd + '0');
+}
+}
+_putchar('\n');
+}
 }
