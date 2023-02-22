@@ -19,7 +19,7 @@ void times_table(void)
 
   for (pur = 0; pur <= 9; pur++)
     {
-      for (cloene = 0; colne <= 9; colne++)
+      for (cloene = 0; cloene <= 9; cloene++)
 	{
 	  prcause = pur * colne;
 	  gens = prcause / 10;
