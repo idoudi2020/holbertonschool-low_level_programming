@@ -35,7 +35,7 @@ limit = '4';
 i = '0';
 }
 _putchar('\n');
-repeat = 0 ;
+repeat = 0;
 i = '0';
 limit = '9';
 }
