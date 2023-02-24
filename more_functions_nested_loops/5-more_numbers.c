@@ -6,11 +6,10 @@
 #include "main.h"
 
         /**
-	 ** more_numbers - prints numbers 0-14 ten times
-	 **
-	 ** Return: voi
-	 **
-	 **/
+	 * more_numbers - prints numbers 0-14 ten times
+	 *
+	 * Return: voi
+	 */
 
 void more_numbers(void)
 {
@@ -36,7 +35,7 @@ limit = '4';
 i = '0';
 }
 _putchar('\n');
-repeat = 0;
+repeat = 0 ;
 i = '0';
 limit = '9';
 }
