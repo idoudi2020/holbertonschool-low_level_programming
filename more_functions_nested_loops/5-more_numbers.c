@@ -22,15 +22,15 @@ repeat = 0;
 limit = '9';
 
 		for (line = 0; line < 10; line++)
- 		{	
-      		while (repeat < 2)
+		{
+		while (repeat < 2)
 		{	
 	  	while (i <= limit)
 		{  
 	        if (limit == '4')
 		_putchar('1');
-	        _putchar(i);
-		i++;
+	_putchar(i);
+	i++;
 	}
 	repeat++;
 	limit = '4';
