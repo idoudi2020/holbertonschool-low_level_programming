@@ -29,7 +29,7 @@ void more_numbers(void)
 	    {
 	      if (limit == '4')
 		_putchar('1');
-	      _putchar(n);
+	      _putchar(i);
 	      i++;
 	    }
 	  repeat++;
