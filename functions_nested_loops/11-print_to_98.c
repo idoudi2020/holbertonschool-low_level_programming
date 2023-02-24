@@ -14,33 +14,34 @@
 
 void print_to_98(int x)
 {
-  if (x < 98)
-    {
-      while (x <= 98)
-	{
-	  printf("%d", x);
-	  if (x != 98)
-	    {
-	      printf(", ");
-	    }
-	  x++;
-	}
-    }
-  else if (x > 98)
-    {
-      while (x >= 98)
-	{
-	  printf("%d", x);
-	  if (x != 98)
-	    {
-	      printf(", ");
-	    }
-	  x--;
-	}
-    }
-  else
-    {
-      printf("98");
-    }
-  printf("\n");
+if (x < 98)
+{
+
+while (x <= 98)
+{
+printf("%d", x);
+if (x != 98)
+{
+printf(", ");
+}
+x++;
+}
+}
+else if (x > 98)
+{
+while (x >= 98)
+{
+printf("%d", x);
+if (x != 98)
+{
+printf(", ");
+}
+x--;
+}
+}
+else
+{
+printf("98");
+}
+printf("\n");
 }
