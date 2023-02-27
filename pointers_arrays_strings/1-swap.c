@@ -14,7 +14,10 @@
 void swap_int(int *a, int *b);
 
 {
-cout << "After Swapping: a = "
-     << a << ", b= " << b;
- return 0;
+
+  int n;
+  n = *a;
+  *a = *b;
+  *b = n;
+
 }
