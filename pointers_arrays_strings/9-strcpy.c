@@ -1,4 +1,4 @@
-/**********************************************
+7/**********************************************
  * File: 9-strcpy.c
  * Auth: idoudi mokhtar
  */
@@ -18,6 +18,6 @@
 char *_strcpy(char *dest, const char *src)
 {
 size_t len = strlen(src);
- strncpy (dest , src , len +1);
+strncpy(dest, src , len + 1);
 return (dest);
 }
