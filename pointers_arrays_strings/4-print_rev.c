@@ -4,9 +4,10 @@
 */
 #include <stdio.h>
 #include "main.h"
+
 /**
  * print_rev - function that prints the string in reverse
- * @s: variable
+ * @s: string
  * Return: 0
  */
 void print_rev(char *s)
