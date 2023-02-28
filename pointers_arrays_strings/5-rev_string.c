@@ -9,11 +9,21 @@
 
 void rev_string(char *s)
 {
-  char str[50] = "123456789";
+int i = 0;
+int dot = 0;
+char charg;
 
-  printf("The given string is =%s\n", str);
-
-  printf("After reversing string is =%s", strrev(str));
-
-  return 0;
+while (s[i] != '\0')
+{
+i++;
+}
+i--;
+while (dot < i)
+{
+charg = s[i];
+s[i] = s[dot];
+s[dot] = charg;
+dot++;
+i--;
+}
 }
