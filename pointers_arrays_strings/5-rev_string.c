@@ -1,11 +1,18 @@
-/*
+/********************************************************************************************
  * File: 5-rev_string.c
  * Auth: idoudi mokhtar
  */
 
+
 #include <stdio.h>
 #include "main.h"
 #include <string.h>
+
+/**
+ * rev_string - reverse string
+ * @s: string
+ * Return: always 0
+ */
 
 void rev_string(char *s)
 {
