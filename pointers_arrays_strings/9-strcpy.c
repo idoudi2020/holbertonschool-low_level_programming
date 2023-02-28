@@ -17,11 +17,7 @@
 
 char *_strcpy(char *dest, const char *src)
 {
-int doto = 0;
-while (src[doto])
-{
-dest [doto] =src [doto];
-doto++;
-}
+size_t len = strlen(src);
+ strncpy (dest , src , len +1);
 return (dest);
 }
