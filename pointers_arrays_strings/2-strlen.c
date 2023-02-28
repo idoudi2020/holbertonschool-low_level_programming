@@ -11,12 +11,13 @@
  *
  * Return: Always 0.
  */
-size_t _strlen(const char *str)
+int _strlen(char *s)
 {
-size_t length = 0;
+int i = 0;
 
-while (*str++)
-length++;
-
-return (length);
+while (s[i] != '\0')
+{
+i++;
+}
+return (i);
 }
