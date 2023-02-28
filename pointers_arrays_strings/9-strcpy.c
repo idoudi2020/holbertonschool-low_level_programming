@@ -17,11 +17,11 @@
 
 char *_strcpy(char *dest, const char *src)
 {
-int dot = 0;
-while (src[dot])
+int doto = 0;
+while (src[doto])
 {
-dest [dot] =src [dot];
-dot++;
+dest [doto] =src [doto];
+doto++;
 }
 return (dest);
 }
