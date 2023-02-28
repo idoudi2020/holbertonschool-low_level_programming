@@ -7,8 +7,10 @@
 #include <stdio.h>
 
 /**
- * print_array -prints n elements of an array of integers
+ * print_array -  prints n elements of an array of integers, followed by a new line
  * @str: string
+ * @a: The array of integers.
+ * @n: The number of elements to be printed
  * Return: always 0
  */
 
