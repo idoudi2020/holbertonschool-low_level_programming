@@ -7,7 +7,7 @@
 #include <stdio.h>
 
 /**
- * puts2 -  half of a string, followed by a new line
+ * puts_half - print  half of a string, followed by a new line
  * @str: string
  * Return: always 0
  */
