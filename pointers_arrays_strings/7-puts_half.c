@@ -19,7 +19,7 @@ int f = 0;
 int n = 0;
 while (str[f] != '\0')
 {
-i++;
+f++;
 }
 n = f / 2;
 if (f % 2 == 1)
