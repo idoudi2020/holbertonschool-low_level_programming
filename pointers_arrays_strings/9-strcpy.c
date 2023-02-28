@@ -1,6 +1,12 @@
+/*
+ * File: 9-strcpy.c
+ * Auth: idoudi mokhtar
+ */
+
 #include "main.h"
 #include <stdio.h>
 #include <string.h>
+
 /**
  * _strcpy - function that copy the string
  * @dest: A buffer to copy the string to.
