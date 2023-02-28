@@ -15,7 +15,7 @@
  */
 
 
-char *_strcpy(char *dest, const char *src)
+char *_strcpy(char *dest, char *src)
 {
 size_t len = strlen(src);
 strncpy(dest, src , len + 1);
