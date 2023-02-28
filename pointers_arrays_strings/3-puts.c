@@ -6,7 +6,7 @@
 #include "main.h"
 
 /**
- * _puts - function that prints the string.
+ * _puts - prints the string.
  * @str: variable.
  * Return: Always 0
  */
