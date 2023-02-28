@@ -1,10 +1,9 @@
 /**********************************************
-/*
 * File: 6-puts2.c
 * Auth: idoudi mokhtar
 */
 
-#include <main.h>
+#include "main.h"
 #include <stdio.h>
 
 /**
