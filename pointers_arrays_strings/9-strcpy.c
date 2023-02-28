@@ -13,6 +13,6 @@
 char *_strcpy(char *dest, char *src)
 {
 size_t len = strlen(src);
-strncpy(dest,src,len + 1);
+strncpy(dest, src, len +1);
 return (dest);
 }
