@@ -6,10 +6,11 @@
 #include "main.h"
 
 /**
- * _puts - prints the string.
- * @str: variable.
- * Return: Always 0
+ * _puts - prints string
+ * @str: string
+ * Return: void
  */
+
 void _puts(char *str)
 {
 int i = 0;
