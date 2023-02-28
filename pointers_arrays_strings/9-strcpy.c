@@ -1,8 +1,3 @@
-/*************
- * File: 9-strcpy.c
- * Auth: idoudi mokhtar
- */
-
 #include "main.h"
 #include <stdio.h>
 #include <string.h>
