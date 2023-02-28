@@ -4,7 +4,7 @@
 */
 
 #include "main.h"
-#include <studio.h>
+#include <stdio.h>
 
 /**
  * puts2 -  half of a string, followed by a new line
