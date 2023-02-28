@@ -11,9 +11,9 @@
  * Return: void
  */
 
-void _puts(char *str);
+void _puts(char *str)
 {
-int i = 0;
+  int i = 0;
 
 while (str[i] != '\0')
 {
