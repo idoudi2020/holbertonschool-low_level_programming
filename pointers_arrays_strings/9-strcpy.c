@@ -18,7 +18,7 @@
 char *_strcpy(char *dest, const char *src)
 {
 int dot;
-for (dot = 0;src [dot] != '\0' ;dot ++)
+for (dot = 0; src [dot] != '\0' ; dot ++)
 {
 dest [dot] =src [dot];
 }
