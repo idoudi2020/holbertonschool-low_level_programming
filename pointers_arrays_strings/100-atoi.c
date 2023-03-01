@@ -15,7 +15,7 @@ int a = 0;
 int b = 0;
 int doto = 1;
 while ((s[a] < '0' || s[a] > '9') && s[a] != 0)
-{  
+{
 if (s[a] == '-')
 doto *= -1;
 a++;
