@@ -31,7 +31,7 @@ int _atoi(char *s)
       else
 	{
 	  b = b * 10 - (s[a] - '0');
-	  i++;
+	  a++;
 	}
     }
   doto *= -1;
