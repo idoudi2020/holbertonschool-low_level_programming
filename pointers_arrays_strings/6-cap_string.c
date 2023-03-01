@@ -12,14 +12,14 @@
 
 char *string_toupper(char *str)
 {
-  int hyphen= 0;
+  int index = 0;
 
-  while (str[hyphen])
+  while (str[index])
     {
-      if (str[hyphen] >= 'a' && str[hyphen] <= 'z')
-	str[hyphen] -= 32;
+      if (str[index] >= 'a' && str[index] <= 'z')
+	str[index] -= 32;
 
-      hyphen++;
+      index++;
     }
 
   return (str);
