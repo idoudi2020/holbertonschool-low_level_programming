@@ -9,16 +9,16 @@
  */
 char *_strncat(char *dest, char *src, int n)
 {
-  int by;
-  int yb;
+int by;
+int yb;
 
-  for (by = 0; dest[by] != '\0'; by++)
-    {
-    }
-  for (yb = 0; yb < n && src[yb] != '\0'; yb++)
-    {
-      dest[by] = src[yb];
-      by++;
-    }
-  return (dest);
+for (by = 0; dest[by] != '\0'; by++)
+{
+}
+for (yb = 0; yb < n && src[yb] != '\0'; yb++)
+{
+dest[by] = src[yb];
+by++;
+}
+return (dest);
 }
