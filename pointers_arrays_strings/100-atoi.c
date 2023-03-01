@@ -37,5 +37,5 @@ a++;
 }
 }
 doto *= -1;
-return (b * doto);
+return (b *doto);
 }
