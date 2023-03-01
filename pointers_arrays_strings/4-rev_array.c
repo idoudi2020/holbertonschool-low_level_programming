@@ -3,21 +3,21 @@
 /**
  * print_rev - function that prints the string in reverse
  * @s: variable
- * Return: always 0
+ * Return: 0
  */
 void print_rev(char *s)
 {
-  int x = 0;
+  int i = 0;
 
-  while (s[x] != '\0')
+  while (s[i] != '\0')
     {
-      x++;
+      i++;
     }
-  x--;
-  while (x >= 0)
+  i--;
+  while (i >= 0)
     {
-      putchar(s[x]);
-      x--;
+      _putchar(s[i]);
+      i--;
     }
-  putchar('\n');
+  _putchar('\n');
 }
