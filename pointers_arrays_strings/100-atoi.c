@@ -1,29 +1,38 @@
 #include "main.h"
+
 /**
- * _atoi - converts a string to an integer.
- * @s: the string to convert
- * Return: the converted string.
+ * _atoi - function that convert a string to an integer
+ *
+ * @s: string to convert
+ * Return: int
  */
+
+
 int _atoi(char *s)
 {
-  int doto;
-  unsigned int lot;
-  char *nour;
-  temp = s;
-  lot = 0;
-  doto = 1;
-  while (*nour != '\0' && (*nour < '0' || *nour > '9'))
+  int a = 0;
+  int b = 0;
+  int doto = 1;
+
+  while ((s[a] < '0' || s[a] > '9') && s[a] != 0)
     {
-      if (*nour == '-')
+      if (s[a] == '-')
 	doto *= -1;
-      nour++;
+      i++;
     }
-  if (*nour != '\0')
+  while ((s[a] >= '0' && s[a] <= '9') && s[a] != 0)
     {
-      do {
-	lot = lot * 10 + (*nour - '0');
-	nour++;
-      } while (*nour >= '0' && *nour <= '9');
+      if (b >= 0)
+	{
+	  b = b * 10 - (s[a] - '0');
+	  a++;
+	}
+      else
+	{
+	  b = b * 10 - (s[a] - '0');
+	  i++;
+	}
     }
-  return (lot * doto);
+  doto *= -1;
+  return (b * doto);
 }
