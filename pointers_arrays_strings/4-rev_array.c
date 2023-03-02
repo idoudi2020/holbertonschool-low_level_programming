@@ -8,21 +8,21 @@
  */
 void reverse_array(int *a, int n)
 {
-  int h;
-  int w;
-  int temp[1000];
+int h;
+int w;
+int temp[1000];
 
-  w = 0;
-  while (w < n)
-    {
-      temp[w] = a[w];
-      w++;
-    }
-  h = 0;
-  while (h < n)
-    {
-      a[h] = temp[w - 1];
-      w--;
-      h++;
-    }
+w = 0;
+while (w < n)
+{
+temp[w] = a[w];
+w++;
+}
+h = 0;
+while (h < n)
+{
+a[h] = temp[w - 1];
+w--;
+h++;
+}
 }
