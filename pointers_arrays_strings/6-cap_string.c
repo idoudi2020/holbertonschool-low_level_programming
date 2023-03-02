@@ -32,6 +32,6 @@ else if (s[prev] == 123 || s[prev] == 125)
 s[i] = s[i] - 32;
 }
 }
- 
+
 return (s);
 }
