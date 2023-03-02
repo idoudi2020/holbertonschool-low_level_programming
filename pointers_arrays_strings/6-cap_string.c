@@ -1,26 +1,36 @@
-/*
- * File: 5-string_toupper.c
- * Auth: idoudi mokhtar
- */
+
 #include <stdio.h>
 #include "main.h"
 /**
  * cap_string - Function that capitalizes all words of a string
  * @s: variable with the string
- * Return: always 0
+ * Return: string
  */
-
-char *string_toupper(char *str)
+char *cap_string(char *s)
 {
-  int index = 0;
+  int i = 0;
 
-  while (str[index])
+  while (s[i] != '\0')
     {
-      if (str[index] >= 'a' && str[index] <= 'z')
-	str[index] -= 32;
-
-      index++;
+      if (i == 0 && s[i] >= 'a' && s[i] <= 'z')
+	{
+	  s[i] = s[i] - 32;
+	  i++;
+	}
+      if (s[i] == ' ' || s[i] == '\n' || s[i] == '\t'
+	  || s[i] == ',' || s[i] == ';' || s[i] == '.'
+	  || s[i] == '!' || s[i] == '?' || s[i] == '"'
+	  || s[i] == '(' || s[i] == ')' || s[i] == '{'
+	  || s[i] == '}')
+	{
+	  ++i;
+	  if (s[i] >= 'a' && s[i] <= 'z')
+	    {
+	      s[i] = s[i] - 32;
+	    }
+	}
+      else
+	i++;
     }
-
-  return (str);
+  return (s);
 }
