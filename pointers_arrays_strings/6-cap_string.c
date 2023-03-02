@@ -7,27 +7,29 @@
  * Return: string
  */
 char *cap_string(char *s)
-
 {
-  int h, k;
+  int i;
+  int prev;
 
-  char spe[13] = {' ', '\t', '\n', ',', ';', '.',
-		  '!', '?', '"', '(', ')', '{', '}'};
-
-  for (h = 0; s[h] != '\0'; h++)
+  for (i = 0; s[i] != '\0'; i++)
     {
-      if (h == 0 && s[h] >= 'a' && s[h] <= 'z')
-	s[h] = 32;
-
-      for (k = 0; k < 13; k++)
+      prev = i - 1;
+      if (s[i] >= 'a' && s[i] <= 'z')
 	{
-	  if (s[h] == spe[k])
-	    {
-	      if (s[h + 1] >= 'a' && s[h + 1] <= 'z')
-		{
-		  s[h + 1] = 32;
-		}
-	    }
+	  if (i == 0)
+	    s[i] = s[i] - 32;
+	  else if (s[prev] >= 9 && s[prev] <= 10)
+	    s[i] = s[i] - 32;
+	  else if (s[prev] >= 32 && s[prev] <= 34)
+	    s[i] = s[i] - 32;
+	  else if (s[prev] >= 40 && s[prev] <= 41)
+	    s[i] = s[i] - 32;
+	  else if (s[prev] == 46)
+	    s[i] = s[i] - 32;
+	  else if (s[prev] == 59)
+	    s[i] = s[i] - 32;
+	  else if (s[prev] == 123 || s[prev] == 125)
+	    s[i] = s[i] - 32;
 	}
     }
 
