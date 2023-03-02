@@ -7,17 +7,17 @@
  */
 void print_rev(char *s)
 {
-  int i = 0;
+int h = 0;
 
-  while (s[i] != '\0')
-    {
-      i++;
-    }
-  i--;
-  while (i >= 0)
-    {
-      _putchar(s[i]);
-      i--;
-    }
-  _putchar('\n');
+while (s[h] != '\0')
+{
+h++;
+}
+h--;
+while (h >= 0)
+{
+_putchar(s[h]);
+h--;
+}
+_putchar('\n');
 }
