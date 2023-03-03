@@ -14,7 +14,7 @@ h = 0;
 while (src[h] != '\0' && h < n)
 {
 dest[h] = src[h];
-i++;
+h++;
 }
 while (h < n)
 {
