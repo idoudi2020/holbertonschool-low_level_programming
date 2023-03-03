@@ -9,7 +9,7 @@
  *
  * Return: Returns a pointer to the first occurrence
  */
-char *_strchr(char *s, char c);
+char *_strchr(char *s, char c) ;
 
 {
 int h ;
