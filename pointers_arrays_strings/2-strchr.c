@@ -7,21 +7,18 @@
  * @src: source string
  * @n: number of bytes to copy
  *
- * Return: pointer to the resulting string
+ * Return: Returns a pointer to the first occurrence
  */
 char *_strncpy(char *dest, char *src, int n)
 {
 int h;
-h = 0;
-while (src[h] != '\0' && h < n)
+for (h=0; h < n; &&  src[h] != '\0';  h++ )
 {
 dest[h] = src[h];
-h++;
 }
-while (h < n)
+for (;h < n; h++)
 {
-dest[h] = '\0';
-h++;
+dest[h] =  '\0' ;
 }
 return (dest);
 }
