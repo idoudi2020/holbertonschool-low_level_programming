@@ -14,7 +14,7 @@ for (h = 0; h < n && src[h] != '\0'; h++)
 {
 dest[h] = src[h];
 }
-for (; h < n; h++)
+for (h < n; h++)
 dest[h] = '\0';
 return (dest);
 }
