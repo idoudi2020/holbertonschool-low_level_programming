@@ -12,15 +12,12 @@
 int main(void)
 {
   char c = 'a';
-  char b = 'A';
+
 
 
   for (; c <= 'z'; )
     putchar(c++);
-  //NUM++;
-  for (; b<= 'Z';)
-    putchar(b++);
-  putchar('\n');
+    putchar('\n');
 
   return (0);
 }
