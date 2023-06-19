@@ -16,11 +16,17 @@ int main(void)
 
 
 
-  for (; c <= 'z'; )
-    putchar(c++);
+  while (c <= 'z')
+    {
+      putchar(c++);
+    }
 
-  for (; b<= 'Z';)
-    putchar(b++);
+
+  while (b<= 'Z')
+    {
+      putchar(b++);
+    }
+
   putchar('\n');
 
   return (0);
