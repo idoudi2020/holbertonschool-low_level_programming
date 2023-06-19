@@ -13,17 +13,15 @@ int main(void)
 {
   char c = 'a';
 
-
-  for (;c <= 'z';)
-
-    if (c != 'e' && c != 'q')
+  do
+    {
+      if (c == 'e' || c == 'q')
+	c++ ;
       putchar(c++);
-
-
+     
+    }while (c <= 'z');
 
   putchar('\n');
-
-
 
   return (0);
 }
