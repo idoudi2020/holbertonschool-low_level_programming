@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-//#include <time.h>
+#include <time.h>
 #include "main.h"
 /**
  *jack_bauer - prints every minute of the day
