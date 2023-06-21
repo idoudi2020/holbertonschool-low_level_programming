@@ -14,7 +14,7 @@ void print_to_98(int n)
   if (n>98)
     for(compt=n ;compt>98;compt--)
       printf ("%d, ",compt);
-  else //n98
+  else /*n<98*/
     for(compt=n ;compt<98;compt++)
       printf ("%d, ",compt);
 
