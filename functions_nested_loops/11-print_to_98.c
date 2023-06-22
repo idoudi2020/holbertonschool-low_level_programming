@@ -10,13 +10,13 @@
 void print_to_98(int n)
 {
 
-  int compt;
+
   if (n>98)
-    for(compt=n ;compt>98;compt--)
-      printf ("%d, ",compt);
+    for(;n>98;n--)
+      printf ("%d, ",n);
   else /*n<98*/
-    for(compt=n ;compt<98;compt++)
-      printf ("%d, ",compt);
+    for(;n<98;n++)
+      printf ("%d, ",n);
 
   printf("98\n");
 }
