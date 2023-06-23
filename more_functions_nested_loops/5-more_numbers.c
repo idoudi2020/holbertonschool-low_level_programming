@@ -1,6 +1,13 @@
 #include <stdio.h>
 #include "main.h"
 
+
+/**
+ * more_numbers - a function that prints 10 times the numbers, from 0 to 14
+ *
+ * Return: void
+ */
+
 void more_numbers(void)
 {
   char s[] = "01234567891011121314";
