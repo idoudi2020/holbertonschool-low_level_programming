@@ -14,9 +14,9 @@
 void print_square(int size)
 {
   int ligne , colone;
-  for(ligne =0 ; ligne <= size ;ligne++)
+  for(ligne =1 ; ligne <= size ;ligne++)
     {
-      for(colone=0 ; colone <= size ;colone++)
+      for(colone=1 ; colone <= size ;colone++)
 	_putchar('#');
       _putchar('\n');
 
