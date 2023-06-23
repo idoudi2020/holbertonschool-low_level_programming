@@ -29,10 +29,10 @@ void print_most_numbers(void)
 
 
 
-/*****on peut le code d'autre maniere
-#include <stdio.h>
+/*on peut le code d'autre maniere
+//#include <stdio.h>
 
-int main()
+//int main()
 {
   char s[] = "01356789";
   int x;
@@ -49,8 +49,8 @@ int main()
 
 autre maniere
 
-#include <stdio.h>
- void main (void)
+//#include <stdio.h>
+// void main (void)
 {
 int a = 0;
 
@@ -63,5 +63,5 @@ putchar(a);
 }
 putchar('\n');
 }
+*/
 
-************************************/
