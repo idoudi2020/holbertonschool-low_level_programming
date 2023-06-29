@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include "main.h"
 
 
@@ -8,8 +7,6 @@
  * Return: void
  */
 
-#include <stdio.h>
-#include "main.h"
 
 void print_square(int size)
 {
