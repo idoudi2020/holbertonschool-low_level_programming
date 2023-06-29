@@ -3,10 +3,11 @@
 /**
  * _strncat - concatenates two strings
  * @dest: destination string
- * @src: s string
+ * @src: string
  * @n: int the max number of bytes from src
  * Return: dest
  **/
+
 char *_strncat(char *dest, char *src, int n)
 {
   int j, i = 0;
