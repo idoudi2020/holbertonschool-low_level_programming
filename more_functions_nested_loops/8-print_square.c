@@ -14,6 +14,7 @@
 void print_square(int size)
 {
   int ligne , colone;
+  if (size>0)
   for(ligne =0 ; ligne <= size ;ligne++)
     {
       for(colone=0 ; colone <= size ;colone++)
@@ -21,4 +22,6 @@ void print_square(int size)
       _putchar('\n');
 
     }
+  else
+    _putchar('\n');
 }
