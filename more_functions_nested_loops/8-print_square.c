@@ -1,21 +1,34 @@
-#include "main.h"
+#include <stdio.h>
+
+
+
 
 /**
  * print_square - print square
- * @size: int
- * Return: Square
+ *
+ * Return: void
  */
+
+
 void print_square(int size)
 {
-
   int ligne , colone;
-  if (size > 0)
-    for (ligne = 0; ligne < size; ligne++)
-      {
-	for (colone = 0; colone < size; colone++)
-	  _putchar('#');
-	_putchar('\n');
-      }
+  if (size >0)
+    putchar('\n');
   else
-    _putchar('\n');
+    {
+      for(ligne =0 ; ligne < size ;ligne++)
+	{
+	  for(colone=0 ; colone < size ;colone++)
+	    {
+	      putchar('#');
+	    }
+	  putchar('\n');
+
+	}
+
+
+    }
+
 }
+
