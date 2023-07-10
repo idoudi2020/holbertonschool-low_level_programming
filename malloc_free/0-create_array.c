@@ -9,7 +9,8 @@
 char *create_array(unsigned int size, char c)
 {
   unsigned int i=0;
-  char *array = (char *) malloc(size); // means: char *array = (char*) malloc(size * sizeof(char));
+  char *array = (char *) malloc(size);
+  
 
   if (size == 0 || array == NULL)
     {
