@@ -18,7 +18,7 @@ if (s1 == NULL)
 if (s2 == NULL)
   s2 = "";
 
-result = malloc(strlen(s1) + strlen(s2) + n + 1);
+result = malloc(strlen(s1) + strlen(s2)  + 1);
 if (result == NULL)
   return NULL;
 strcpy(result, s1);
