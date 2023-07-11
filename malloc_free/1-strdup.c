@@ -19,4 +19,5 @@ char *_strdup(char *src)
   strcpy(str, src);
 
   return str;
+  free (str);
 }
