@@ -11,8 +11,10 @@ char *_strdup( char *str) {
   size_t len;
 char *src;
   len = strlen(str + 1);
+  if (str == NULL)
+	  return NULL;
   src = malloc(len + 2);
-  if (str == NULL || src == NULL)
+  if ( src == NULL)
     return NULL;
   memcpy(src, str, len + 1);
   return src;
