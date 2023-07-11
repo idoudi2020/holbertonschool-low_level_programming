@@ -21,7 +21,7 @@ if (s2 == NULL)
 result = malloc(strlen(s1) + strlen(s2)  + 1);
 if (result == NULL)
   return NULL;
-strcpy(result, s1);
+memcpy(result, s1 ,n);
 strcat(result, s2);
 return result;
 }
