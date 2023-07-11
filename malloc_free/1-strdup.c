@@ -8,10 +8,16 @@
  */
 
 
-char *_strdup( char *str) {
-  char *src = malloc (strlen (str) + 1);
-  if (str == NULL || src == NULL)
+char *_strdup(char *str)
+{
+  if (str == NULL)
     return NULL;
-  strcpy (src, str);
+
+  char *src = malloc(strlen(str) + 1);
+  if (src == NULL)
+    return NULL;
+
+  strcpy(src, str);
+
   return src;
 }
