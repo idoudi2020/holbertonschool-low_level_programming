@@ -9,9 +9,9 @@
 
 char *_strdup( char *str) {
   size_t len;
+char *src;
   len = strlen(str + 1);
-
-  char *src = malloc(len + 2);
+  src = malloc(len + 2);
   if (str == NULL || src == NULL)
     return NULL;
   memcpy(src, str, len + 1);
