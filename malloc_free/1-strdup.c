@@ -8,9 +8,13 @@
  */
 
 char *_strdup( char *str) {
-  char *src = malloc (sizeof(str) + 1);
+  size_t len;
+  len = strlen(str + 1);
+
+  char *src = malloc(len + 2);
   if (str == NULL || src == NULL)
     return NULL;
-  strcpy (src, str);
+  memcpy(src, str, len + 1);
   return src;
 }
+
