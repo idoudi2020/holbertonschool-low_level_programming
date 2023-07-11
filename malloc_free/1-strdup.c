@@ -9,19 +9,16 @@
  *     */
 char *_strdup(char *str)
 {
-	unsigned int len;
-	char *arr;
-	  if (str == NULL)
-		      return NULL;
-
-	   len = strlen(str);
-	      arr = malloc(len + 1);
-	        if (arr == NULL)
-			    return NULL;
-
-		  memcpy(arr, str, len + 1);
-
-		    return arr;
+unsigned int len;
+char *arr;
+if (str == NULL)
+return NULL;
+len = strlen(str);
+arr = malloc(len + 1);
+if (arr == NULL)
+return NULL;
+memcpy(arr, str, len + 1);
+return arr;
 }
 
 
