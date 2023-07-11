@@ -7,11 +7,17 @@
  * @str: pointer to character
  *  Return: pointer to string or NULL if insufficient memory
  **/
-char *_strdup( char *str) {
+char *_strdup(char *str)
+{
+
   char *arr;
-  if (arr == NULL || str == NULL)
+  if (str == NULL)
     return (NULL);
-    arr = malloc (strlen (str) + 1);
+
+  arr = malloc(strlen(str) + 1);
+
+  if (arr == NULL)
+    return (NULL);
   strcpy (arr, str);
-  return arr;
+  return (arr);
 }
