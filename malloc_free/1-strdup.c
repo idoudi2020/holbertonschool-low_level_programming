@@ -10,14 +10,14 @@
 char *_strdup(char *str)
 {
       
-
+  char *arr;
 	if (str == NULL)
 	  return (NULL);
 
-	char *arr = malloc(strlen(str) + 1);
+	arr = malloc(strlen(str) + 1);
 
 	if (arr == NULL)
 		return (NULL);
-	memcpy(arr, str, + 1);
+	strcpy (arr, str);
 	return (arr);
 }
