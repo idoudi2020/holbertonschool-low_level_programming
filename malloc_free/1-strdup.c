@@ -6,17 +6,12 @@
  * @src: pointer to character
  * Return: pointer to string or NULL if insufficient memory
  */
-char *_strdup(char *str)
-{
-  if (str == NULL)
+
+
+char *_strdup( char *str) {
+  char *src = malloc (strlen (str) + 1);
+  if (str == NULL || src == NULL)
     return NULL;
-
- 
-  char *src = malloc(strlen(str) + 1);
-  if (src == NULL)
-    return NULL;
-
-  strcpy(src, str);
-
+  strcpy (src, str);
   return src;
 }
