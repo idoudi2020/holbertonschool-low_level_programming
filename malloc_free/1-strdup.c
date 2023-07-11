@@ -18,5 +18,5 @@ char *_strdup( char *src) {
       return NULL;
     }
   return str;
-  free (str);
+  
 }
