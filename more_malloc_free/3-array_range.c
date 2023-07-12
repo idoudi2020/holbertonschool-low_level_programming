@@ -9,7 +9,7 @@
  * Return: ptr to array.
  **/
 int* array_range(int min, int max) {
-  int *array , x;
+  int *array , x , i;
   if (min > max){ 
     return (NULL);
   }
@@ -18,7 +18,7 @@ int* array_range(int min, int max) {
    if (array == NULL) 
     return (NULL);
 
-   for (int i = 0; i < x ; i++)
+   for ( i = 0; i < x ; i++)
      { 
      array[i] = min + i;
                    }
