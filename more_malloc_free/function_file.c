@@ -1,7 +1,7 @@
 #include "main.h"
 
 
-char *_strcat(char *dest, char *src)
+char *function_file(char *dest, char *src);
 {
   char *ptr = dest;
 
@@ -17,7 +17,7 @@ char *_strcat(char *dest, char *src)
   return (dest);
 }
 
-char *_strcpy(char *v, char *src)
+char *function_file(char *dest, char *src);
 {
   int i;
 
