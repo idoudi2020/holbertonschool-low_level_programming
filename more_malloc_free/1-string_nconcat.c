@@ -11,18 +11,25 @@
  * Return: pointer to the concatenated strings
  */
 
-char *string_nconcat(char *s1, char *s2, unsigned int n)
-{
-  char *result;
-if (s1 == NULL)
-  s1 = "";
-if (s2 == NULL)
-  s2 = "";
+char *string_nconcat(char *s1, char *s2, unsigned int n) {
 
-result = malloc(strlen(s1) + strlen(s2)  + 1);
-if (result == NULL)
-  return NULL;
-memcpy(result, s1 ,n);
-strcat(result, s2);
-return result;
+
+  if (s1 == NULL) s1 = "";
+
+  if (s2 == NULL)  s2 = "";
+
+
+  if (n >= strlen(s2))
+    n = strlen(s2);
+
+
+  char *str = malloc(strlen(s1)+ n + 1);
+  if (str == NULL)
+    {
+      return NULL;
+    }
+  strcpy(str, s1);
+  strncat(str, s2, n);
+
+  return str;
 }
