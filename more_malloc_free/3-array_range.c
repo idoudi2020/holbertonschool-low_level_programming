@@ -9,11 +9,11 @@
  * Return: ptr to array.
  **/
 int* array_range(int min, int max) {
-  int *array;
+  int *array , x;
   if (min > max){ 
     return (NULL);
   }
-  int x = max - min + 1;
+  x = max - min + 1;
   array = malloc(x * sizeof(int) ) ;
    if (array == NULL) 
     return (NULL);
