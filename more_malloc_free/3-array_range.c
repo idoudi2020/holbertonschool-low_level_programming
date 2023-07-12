@@ -1,4 +1,4 @@
-#include<stdlib>
+#include<stdlib.h>
 #include "main.h"
 /**
  * array_range - array with countable inside
