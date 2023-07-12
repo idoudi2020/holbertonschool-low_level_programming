@@ -7,5 +7,5 @@ void *_calloc(unsigned int nmemb, unsigned int size);
 int *array_range(int min, int max);
 char *_strcat(char *dest, char *src);
 char *_strcpy(char *v, char *src);
-
+char *_strncat(char *dest, char *src, int n);
 #endif
