@@ -16,8 +16,8 @@ char* str_concat( char *s1,  char *s2)
   result = malloc(strlen(s1) + strlen(s2) + 1);
   if (result == NULL)
     return NULL;
-  _strcpy(result, s1);
-   _strcat(result, s2);
+  function_file(result, s1);
+   function_file(result, s2);
   return result;
 }
 
