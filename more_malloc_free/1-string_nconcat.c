@@ -2,35 +2,50 @@
 #include <stdlib.h>
 #include <stddef.h>
 #include <string.h>
+char *_strcpy(char *dest, char *src);
+char *_strcat(char *dest, char *src);
 
-/**
- * string_nconcat - function concatenates two strings
- * @s1: first string to concatenate
- * @s2: second string
- * @n: number of bytes to concatenate from s2
- * Return: pointer to the concatenated strings
- */
+char* str_concat( char *s1,  char *s2)
+{
+  char *result;
+  if (s1 == NULL)
+    s1 = "";
+  if (s2 == NULL)
+    s2 = "";
 
-char *string_nconcat(char *s1, char *s2, unsigned int n) {
-
-  char *str;
-
-  if (s1 == NULL) s1 = "";
-
-  if (s2 == NULL)  s2 = "";
-
-
-  if (n >= strlen(s2))
-    n = strlen(s2);
+  result = malloc(strlen(s1) + strlen(s2) + 1);
+  if (result == NULL)
+    return NULL;
+  _strcpy(result, s1);
+  _strcat(result, s2);
+  return result;
+}
 
 
-  str = malloc(strlen(s1)+ n + 1);
- if (str == NULL)
+char *_strcat(char *dest, char *src)
+{
+  char *ptr = dest;
+
+  while (*ptr != '\0')
+    ptr++;
+  while (*src != '\0')
     {
-      return NULL;
+      *ptr = *src;
+      ptr++;
+      src++;
     }
-  strcpy(str, s1);
-  strncat(str, s2, n);
+  *ptr = '\0';
+  return (dest);
+}
 
-  return str;
+char *_strcpy(char *dest, char *src)
+{
+  int i;
+
+  for (i = 0; src[i] != '\0'; i++)
+    {
+      dest[i] = src[i];
+    }
+  dest[i] = '\0';
+  return (dest);
 }
