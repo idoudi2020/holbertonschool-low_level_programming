@@ -2,8 +2,8 @@
 #include <stdlib.h>
 #include <stddef.h>
 #include <string.h>
-char *_strcpy(char *dest, char *src);
-char *_strcat(char *dest, char *src);
+
+
 
 char* str_concat( char *s1,  char *s2)
 {
@@ -22,30 +22,3 @@ char* str_concat( char *s1,  char *s2)
 }
 
 
-char *_strcat(char *dest, char *src)
-{
-  char *ptr = dest;
-
-  while (*ptr != '\0')
-    ptr++;
-  while (*src != '\0')
-    {
-      *ptr = *src;
-      ptr++;
-      src++;
-    }
-  *ptr = '\0';
-  return (dest);
-}
-
-char *_strcpy(char *dest, char *src)
-{
-  int i;
-
-  for (i = 0; src[i] != '\0'; i++)
-    {
-      dest[i] = src[i];
-    }
-  dest[i] = '\0';
-  return (dest);
-}
