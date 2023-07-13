@@ -29,43 +29,8 @@ char *string_nconcat(char *s1, char *s2, unsigned int n) {
     {
       return NULL;
     }
-  _strcpy(str, s1);
-  _strncat(str, s2, n);
+  strcpy(str, s1);
+  strncat(str, s2, n);
 
   return str;
-}
-/**
- * _strcpy - copie string
- * @dest: string
- * @src: string
- * Return: string to stdout
- */
-char *_strcpy(char *dest, char *src)
-{
-  int i;
-
-  for (i = 0; src[i] != '\0'; i++)
-    {
-      dest[i] = src[i];
-    }
-  dest[i] = '\0';
-  return (dest);
-}
-
-/**
- * _strncat - concatenates two strings
- * @dest: destination string
- * @src: string
- * @n: int the max number of bytes from src
- * Return: dest
- */
-char *_strncat(char *dest, char *src, int n)
-{
-  int j, i = 0;
-
-  while (dest[i] != '\0')
-    i++;
-  for (j = 0; j < n && src[j] != '\0'; j++)
-    dest[i + j] = src[j];
-  return (dest);
 }
