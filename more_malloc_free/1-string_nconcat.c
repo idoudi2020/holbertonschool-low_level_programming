@@ -30,8 +30,8 @@ char *string_nconcat(char *s1, char *s2, unsigned int n) {
       return NULL;
     }
  
-  _strcpy(str, s1);
-  _strncat(str, s2, n);
+  strcpy(str, s1);
+  strncat(str, s2, n);
     
   return str;
 }
@@ -51,7 +51,7 @@ char *_strcpy(char *dest, char *src)
       dest[i] = src[i];
     }
   dest[i] = '\0';
-  free(dest);
+  /* free(dest);*/
   return (dest);
 }
 
@@ -71,6 +71,6 @@ char *_strncat(char *dest, char *src, int n)
     i++;
   for (j = 0; j < n && src[j] != '\0'; j++)
     dest[i + j] = src[j];
-  free (dest);
+  /* free (dest);*/
   return (dest);
 }
